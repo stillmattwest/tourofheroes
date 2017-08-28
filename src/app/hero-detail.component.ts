@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
 import { HeroService } from './hero.service';
@@ -24,5 +24,5 @@ export class HeroDetailComponent implements OnInit {
     this.location.back();
   }
 
-  
+  hero: Hero;
 }
